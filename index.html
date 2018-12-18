@@ -48,7 +48,7 @@ title: Title of the Page
       <div class="author">
         <div class="date"><span class="text-color-opacity-5">Posted On</span> {{ post.date | date: "%b %d, %y" }}</div>
       </div>
-      <h3 class="blog-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <h3 class="blog-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
       <div class="bottom-border"></div>
       <p class="excerpt">
         {{ post.excerpt | strip_html }}
@@ -59,7 +59,7 @@ title: Title of the Page
   <!-- Pagination links -->
   <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}#blog-posts" class="previous">
+    <a href="{{ paginator.previous_page_path | relative_url }}#blog-posts" class="previous">
       Previous
     </a>
   {% else %}
@@ -69,7 +69,7 @@ title: Title of the Page
     {{ paginator.page }} of {{ paginator.total_pages }}
   </span>
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}#blog-posts" class="next">Next</a>
+    <a href="{{ paginator.next_page_path | relative_url }}#blog-posts" class="next">Next</a>
   {% else %}
     <span class="next ">Next</span>
   {% endif %}
