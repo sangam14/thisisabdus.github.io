@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div id="post">
+    <div class="post-title">
+        <h2>{{ page.title }}</h2>
+    </div>
+    <div class="meta">
+        <span class="date"><span class="text-color-opacity-5">Posted On</span> {{ page.date | date: "%b %d, %y" }}</span>
+        <span class="author">
+            <span class="text-color-opacity-5"> By </span>
+            {{ site.title }}
+            {% if page.author %}
+                {{ page.author }}
+            {% else %}
+                {{ site.author }}
+            {% endif %}
+        </span>
+    </div>
+    <div class="bottom-border"></div>
+    <div class="post-content">
+        {{ content }}
+    </div>
+</div>

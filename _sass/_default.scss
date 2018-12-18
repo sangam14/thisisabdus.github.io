@@ -1,0 +1,17 @@
+body {
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    font-size: 1.2rem;
+    border-top: 5px solid #800080;
+}
+h1, h2, h3,
+h4, h5, h6 {
+    margin: 5px 0;
+    font-family: 'Oswald', sans-serif;
+    transition: .4s $transition-backward all;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+}
