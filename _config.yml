@@ -25,6 +25,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 paginate: 4
 paginate_path: "/page:num/"
+permalink: /:title
 
 # Build settings
 markdown: kramdown
