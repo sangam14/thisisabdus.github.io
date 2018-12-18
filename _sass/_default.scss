@@ -1,3 +1,20 @@
+// Colors
+$primary-color: #1d2951;
+$text-color: #c71585;
+$primary-color-opacity-5: #1d295183;
+$primary-color-opacity-3: #1d2951d0;
+$text-color-opacity-5: #c7158583;
+$link-color: #0000ee;
+
+// Transitions 
+$transition-backward: cubic-bezier(.68,-0.55,.27,1.55);
+
+// Other
+$margin-bottom: 2rem;
+
+
+
+
 body {
     font-family: 'Karla', sans-serif;
     margin: 0;
