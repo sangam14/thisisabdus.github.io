@@ -29,7 +29,6 @@ paginate_path: "/page:num/"
 # Build settings
 markdown: kramdown
 plugins:
-  - github-pages
   - jekyll-feed
   - jekyll-paginate
 
