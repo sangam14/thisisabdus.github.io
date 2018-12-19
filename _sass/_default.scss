@@ -4,6 +4,8 @@ body {
     font-size: 1.2rem;
     border-top: 5px solid #800080;
 }
+
+// Heading Family
 h1, h2, h3,
 h4, h5, h6 {
     margin: 5px 0;
@@ -11,7 +13,37 @@ h4, h5, h6 {
     transition: .4s $transition-backward all;
 }
 
+// a TAG
 a {
     color: $link-color;
     text-decoration: none;
+}
+
+// CODE
+code, pre {
+    width: auto;
+    overflow: auto;
+    font-family: 'Fira Code', 'Operator Mono Book', monospace;
+    font-size: 1.1rem;
+}
+code:not(.highlight) {
+    color: $text-color;
+}
+.highlight {
+    padding: .4rem 1rem;
+    border-radius: 4px;
+}
+.highlight code {
+    color: #fcd9d9;
+}
+
+// BLOCKQUOTE
+blockquote {
+    width: 90%;
+    margin: 3rem auto;
+    padding: .1rem 1rem;
+    color: #19244783;
+    border-left: 7px solid #ff0055;
+    border-radius: 6px;
+    background: #f0edede6;
 }
