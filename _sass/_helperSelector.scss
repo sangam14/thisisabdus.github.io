@@ -24,3 +24,20 @@ i { vertical-align: middle; }
     background: #ffefc5;
     border-radius: 6px;
 }
+
+// BUTTONS
+.nav-btn {
+    color: inherit;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: .4rem .8rem;
+    display: inline-block;
+    margin: .2rem;
+    transition: .4s $transition-backward all;
+
+    &:hover {
+        background: darken($color: $primary-color, $amount: 10%)
+    }
+}
+

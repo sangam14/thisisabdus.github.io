@@ -8,6 +8,7 @@ body {
 // Heading Family
 h1, h2, h3,
 h4, h5, h6 {
+    font-weight: 400;
     margin: 5px 0;
     font-family: 'Oswald', sans-serif;
     transition: .4s $transition-backward all;
@@ -17,9 +18,17 @@ h4, h5, h6 {
 a {
     color: $link-color;
     text-decoration: none;
+    transition: .1s ease all;
+
+    &:hover {
+        color: darken($color: $link-color, $amount: 20%);
+    }
 }
 
 // CODE
+code {
+    word-wrap: break-word;
+}
 code, pre {
     width: auto;
     overflow: auto;

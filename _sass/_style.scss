@@ -53,7 +53,6 @@ nav {
     }
 
     & .about-author {
-        text-align: justify;
         max-width: 70%;
         margin: auto;           // Refactor 
         margin-bottom: $margin-bottom;
@@ -61,6 +60,7 @@ nav {
         @media (max-width: 800px) {
             & {
                 max-width: 90%;
+                text-align: justify;
             }
         }
     }
@@ -190,8 +190,90 @@ nav {
             margin-bottom: 0.67em; 
             margin-left: 0; 
             margin-right: 0;
+            line-height: 43px;
         }
 
         @media (max-width: 800px) { & { width: 90%; }}
     }
+}
+
+
+
+/**         HIDDEN NAV STYLES         **/
+// Nav Open
+.hidden-nav {
+    border-top: 5px solid #800080;
+    background: $primary-color;
+    color: #fff;
+    width: 40%;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    overflow-y: auto;
+    transform: translateX(105%);
+    transition: .4s cubic-bezier(.23,1,.32,1) all;
+
+    @media (max-width: 800px) {
+        & {
+            width: 100%;
+        }
+    }
+    
+    & a {
+        color: #fff;
+    }
+
+    & .nav-close {
+        position: relative;
+        text-align: right;
+        margin: 0;
+        font-size: 3rem;
+        cursor: pointer;
+        padding-right: 10px;
+        color: #ff0055;
+    }
+
+    & .nav-content {
+        padding: 2rem;
+        font-size: .7em;
+
+        & .header {
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        & .header:not(:first-child) {
+            margin-top: 4rem;
+        }
+
+        & .bottom-border {
+            margin: 6px auto 16px 0;
+            height: 1px;
+        }
+    }
+}
+
+// Reveal Hidden Nav
+.show-nav {
+    transform: translateX(0);
+}
+
+// This will cover all body content once the nav is open 
+#nav-bottom-screen {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #ffffffcb;
+    z-index: 500;
+    cursor: crosshair;
+}
+
+// PAGE STYLE //
+.page-content {
+    @extend .post-content;    
 }
