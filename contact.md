@@ -5,4 +5,6 @@
     permalink: /contact/
 ---
 
-This page is yet to be updated.
+### Get In Touch 
+
+I am available in [Twitter](), [LinkedIn]() and [Discord](). Feel free to shoot me a message! You can mail me at [dev.abdus@gmail.com]()

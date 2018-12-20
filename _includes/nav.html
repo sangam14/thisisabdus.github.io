@@ -10,31 +10,26 @@
         <div class="bottom-border"></div>
 
         <a class="nav-btn" href="{{ '/' | relative_url }}">Home</a>
-        <a class="nav-btn" href="{{ '/about/' | relative_url }}">About</a>
-        <a class="nav-btn" href="{{ '/contact/' | relative_url }}">Contact</a>
-        <a class="nav-btn" href="{{ '/' | relative_url }}">JavaScript</a>
-        <a class="nav-btn" href="{{ '/about/' | relative_url }}">Linux</a>
-        <a class="nav-btn" href="{{ '/contact/' | relative_url }}">NodeJS</a>
-        <a class="nav-btn" href="{{ '/' | relative_url }}">Projects</a>
-        <a class="nav-btn" href="{{ '/about/' | relative_url }}">Server-Side</a>
-        <a class="nav-btn" href="{{ '/contact/' | relative_url }}">Some Other</a>
+        {% include sitePageListing.html %}
 
 
-        <!-- Sub Domains Links -->
-        <div class="header">Sub Domains</div>
+        <!-- SITE CATEGORIES -->
+        <div class="header">Categories</div>
         <div class="bottom-border"></div>
 
-        <a class="nav-btn" href="https://showcase.abdusdev.me">showcase</a>
-        <a class="nav-btn" href="https://blog.abdusdev.me">blog</a>
+        {% include siteCategoryListing.html %}
 
-        <!-- Sub Domains Links -->
-        <div class="header">External Links</div>
+
+        <!-- Commit Status  -->
+        <div class="header">Commit Status</div>
         <div class="bottom-border"></div>
 
-        <a class="nav-btn" href="https://github.com/thisisabdus">GitHub</a>
-        <a class="nav-btn" href="https://gitlab.com/thisisabdus">GitLab</a>
+        <a href="https://sourcerer.io/thisisabdus" target="_blank"><img src="https://img.shields.io/badge/JavaScript-274%20commits-orange.svg" alt=""></a>
+        <a href="https://sourcerer.io/thisisabdus" target="_blank"><img src="https://img.shields.io/badge/Shell-4%20commits-orange.svg" alt=""></a>
+        <a href="https://sourcerer.io/thisisabdus" target="_blank"><img src="https://img.shields.io/badge/HTML-197%20commits-orange.svg" alt=""></a>
+        <a href="https://sourcerer.io/thisisabdus" target="_blank"><img src="https://img.shields.io/badge/CSS-215%20commits-orange.svg" alt=""></a>
 
-
+        
         <!-- Recent Posts Links -->
         <div class="header">Recent Posts</div>
         <div class="bottom-border"></div>
@@ -50,6 +45,24 @@
                 </p>
             </div>
         {% endfor %}
+
+
+        <!-- Sub Domains Links -->
+        <div class="header">Sub Domains</div>
+        <div class="bottom-border"></div>
+
+        <a class="nav-btn" href="https://showcase.abdusdev.me" target="_blank">showcase</a>
+        <a class="nav-btn" href="https://blog.abdusdev.me" target="_blank">blog</a>
+
+
+        <!-- External Links -->
+        <div class="header">External Links</div>
+        <div class="bottom-border"></div>
+
+        <a class="nav-btn" href="https://github.com/thisisabdus" target="_blank">GitHub</a>
+        <a class="nav-btn" href="https://freecodecamp.org/thisisabdus" target="_blank">Free Code Camp</a>
+        <a class="nav-btn" href="https://sourcerer.io/thisisabdus" target="_blank">Sourcerer</a>
+        <a class="nav-btn" href="https://gitlab.com/thisisabdus" target="_blank">GitLab</a>     
 
     </div>
 </div>

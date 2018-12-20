@@ -1,0 +1,18 @@
+<!-- 
+---
+layout: category
+title: Database
+permalink: /categories/database/
+---
+
+<div class="posts">
+    {%- for post in site.categories['database'] -%}
+        <div class="post">
+            <h3 class="post-title"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h3>
+            {{ post.content | strip_html | strip_newlines | truncate: '200' }} <br>
+            [<a href="{{ post.url | absolute_url }}">Read More</a>]
+        </div>
+    {% endfor %}
+</div> -->
+
+

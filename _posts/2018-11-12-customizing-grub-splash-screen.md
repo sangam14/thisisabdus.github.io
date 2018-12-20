@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customizing GRUB2 Splash Screen in GNU/Linux
-categories: [ gnu/linux ]
+categories: [ gnu-linux ]
 ---
 I actually got bored of seeing the same bootloader splash screen every day. So, I decided to change it’s appearance completely to something new. I use **GR**and **U**nified **B**ootloader(GRUB) and here’s how you can customize its splash screen.
 

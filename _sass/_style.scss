@@ -157,6 +157,7 @@ nav {
 
 /*******   CONTAINS POST PAGE STYLES      *********/
 #post {
+    min-height: 68vh;
     color: $primary-color;
     
     & .post-title {
@@ -190,7 +191,7 @@ nav {
             margin-bottom: 0.67em; 
             margin-left: 0; 
             margin-right: 0;
-            line-height: 43px;
+            line-height: unset;
         }
 
         @media (max-width: 800px) { & { width: 90%; }}
@@ -276,4 +277,31 @@ nav {
 // PAGE STYLE //
 .page-content {
     @extend .post-content;    
+}
+
+
+// *******  CATEGORY POSTS  ******** //
+#category-posts {
+    @extend #blog-posts;
+    width: 100%;
+
+    & h3 {
+        margin-top: unset!important;
+    }
+}
+.category-post-count {
+    margin-right: .2rem;
+    color: #ff0055;
+}
+
+
+
+// FOOTER //
+
+footer {
+    margin-top: 5rem;
+    padding: 2rem 0;
+    text-align: center;
+    color: #858585;
+    background: #dddddd;
 }

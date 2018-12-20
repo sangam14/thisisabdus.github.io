@@ -19,7 +19,7 @@ I am a student learning full-stack web development in Node JS and React. I am mo
 
 ### Resources I learn from
 
-- [The Complete Web Developer Zero to Mastery](https://www.udemy.com/the-complete-web-developer-zero-to-mastery/) (Special thanks to [Andrei Neagoie](https://twitter.com/AndreiNeagoie))
+- [The Complete Web Developer Zero to Mastery](https://www.udemy.com/the-complete-web-developer-zero-to-mastery/) (Special thanks to [Andrei  Neagoie](https://twitter.com/AndreiNeagoie))
 - [W3Schools](https://w3schools.org) (Beginner-friendly tutorials and Docs)
 - [Free Code Camp](https://freecodecamp.org) (Org that teaches you how to code for free)
 - [MDN](https://developer.mozilla.org/en-US/) (Lots of web development Docs)
