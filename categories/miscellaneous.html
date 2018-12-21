@@ -1,0 +1,19 @@
+---
+layout: category
+title: Miscellaneous
+permalink: /categories/miscellaneous/
+---
+
+<div id="category-posts">
+    {% for post in site.categories['miscellaneous'] %}
+        <div class="post">
+            <div class="author">
+                <div class="date"><span class="text-color-opacity-5">Posted On</span> {{ post.date | date: "%b %d, %y" }}</div>
+            </div>
+            <h3 class="blog-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            <p class="excerpt">
+                {{ post.excerpt | strip_html }}
+            </p>
+        </div>
+    {% endfor %}
+</div>
