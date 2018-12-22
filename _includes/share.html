@@ -1,0 +1,13 @@
+<div id="share">
+    Share: 
+    
+    <a href="https://twitter.com/home?status={{ page.title | append: ' - ' | append: site.title }} {{ page.url | absolute_url }}">Tweet</a> 
+    &middot;
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}">Facebook</a> 
+    &middot;
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title={{ page.title }}&summary={{ page.excerpt | strip_html }}&source=somesource">Linkedin</a>
+    &middot;
+    <a href="https://plus.google.com/share?url={{ page.url | absolute_url }}">Google +</a>
+    &middot;
+    <a href="mailto:?bcc={{ site.email_id }}&subject={{ page.title }} - {{ site.title }}&body={{ page.excerpt | strip_html }} - {{ page.url | absolute_url }}">Email</a>
+</div>

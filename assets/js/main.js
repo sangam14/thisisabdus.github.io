@@ -34,3 +34,13 @@ coverHtmlBody.addEventListener('click', e => {
         coverHtmlBody.style.display = 'none';
     }
 })
+
+
+// Open links which are not a part of this website, in a new window
+let links = document.links;
+
+[...links].forEach(link => {
+    if (link.hostname !== window.location.hostname) {
+        link.target = '_blank'
+    }
+})

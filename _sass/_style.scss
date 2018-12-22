@@ -192,6 +192,7 @@ nav {
             margin-left: 0; 
             margin-right: 0;
             line-height: unset;
+            color: #141414;
         }
 
         @media (max-width: 800px) { & { width: 90%; }}
@@ -299,9 +300,18 @@ nav {
 // FOOTER //
 
 footer {
+    margin: auto;
     margin-top: 5rem;
-    padding: 2rem 0;
+    padding: 2rem;
     text-align: center;
     color: #858585;
     background: #dddddd;
+}
+
+/********   SOCIAL SHARE     *********/
+#share {
+    margin: 2rem 0;
+    & a {
+        color: #ff0055;
+    }
 }

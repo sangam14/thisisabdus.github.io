@@ -40,4 +40,4 @@ SPF stands for **Sender Policy Request**, which is basically a TXT record. Check
 DKIM looks something like this: `selector1._domainkey.example.com` and has a value corresponding to this. This piece of information is used by email services to determine if an email is spam or legit. Again, this is also a TXT record and can be found in your Zoho Admin Panel.
 
 
-Once you are done configuring your DNS with this data, you should get your personalised custom email address. Have a great time ahead!
+Once you are done configuring your DNS with appropriate data, you'll be allowed to create your email address under your domail name. You can login to your email account by following this link: [https://mail.zoho.com](https://mail.zoho.com)
