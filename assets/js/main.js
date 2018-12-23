@@ -44,3 +44,30 @@ let links = document.links;
         link.target = '_blank'
     }
 })
+
+
+// Handling Comments 
+let commentForm = document.querySelector('#comment-form form');
+fetch('http://localhost:3000/comments?postURL=' + window.location.href)
+.then(data => data.json())
+.then(data => console.log(data))
+
+
+// add new comment 
+// fetch('http://localhost:3000/comments/new', {
+//     method: 'POST',
+//     body: JSON.stringify({
+//         "commentText": "This 2nd Comment is From Fetch",
+//         "userFullName": "Abdus Samad",
+//         "userEmail": "azad3652@gmail.me",
+//         "userWebsite": "https://abdus.in",
+//         "postURL": window.location.href,
+//     }),
+//     headers: {
+//         "Content-Type": "application/json"
+//     },
+
+// })
+// .then(data => data.json())
+// .then(data => console.log(data))
+// .catch(err => console.log(err))
