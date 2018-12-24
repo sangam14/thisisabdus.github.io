@@ -19,6 +19,7 @@ nav {
         border-radius: 50%;
         color: #fff;
         background: #ff0055;
+        font-family: 'Oswald', sans-serif;
         
         &:hover {
             box-shadow: 0 0 5px 0 #363636;
@@ -165,7 +166,6 @@ nav {
         margin-top: 2rem;
         padding: 1rem .6rem;
         text-align: center;
-        font-family: 'Oswald', sans-serif;
     }
 
     & .meta {
@@ -183,7 +183,7 @@ nav {
         margin: auto;
         margin-top: 4rem;
         color: #192447d0;
-        line-height: 30px;
+        line-height: 35px;
 
         & h1, & h2, & h3,
         & h4, & h5, & h6 {
@@ -310,10 +310,9 @@ footer {
 
 /********   SOCIAL SHARE     *********/
 #share {
-    width: 90%;
-    border-top: 1px solid #ff0055;
+    width: 100%;
     padding-top: 2rem;
-    margin: 3rem auto 2rem auto;
+    margin: 2rem auto;
     & a {
         color: #ff0055;
     }
@@ -321,7 +320,7 @@ footer {
 
 // ******     COMMENT FORM      ********  //
 #comment-form {
-    width: 90%;
+    width: 100%;
     margin: auto;
 
     & form {
@@ -334,7 +333,7 @@ footer {
             padding: .5rem;
             margin: .2rem 0;
             border: 0;
-            border: 2px solid lightgray;
+            border: 1px solid lightgray;
             font-family: inherit; 
             font-size: inherit;
 

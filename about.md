@@ -4,28 +4,22 @@
     permalink: /about/
 ---
 
-Hello! I am Abdus, a developer living in India. And I am glad that you're interested in knowing more about me 😃
+Hello! I am Abdus, a developer living in India. And I am glad that you're interested in reading about me 😃
 
 First off, I am not really good at explaining things or writing stories or even talking about myself. So, please pardon me if I sound strange at any point!
 
-I am a student learning full-stack web development in Node JS and React. I am mostly self-taught(I am pursuing a degree in CS, but that's as useless as _The Ropeless Skipping Rope_). I teach myself how to code from around the web. I am grateful to websites like [MDN](https://developer.mozilla.org/en-US/), [W3Schools](https://w3schools.org), [freeCodeCamp](https://freecodecamp.org) etc.
+I am a student learning, full-stack web development. I am mostly self-taught(though I am pursuing a CS degree). I teach myself how to code from around the web. I am grateful to websites like [MDN](https://developer.mozilla.org/en-US/), [W3Schools](https://w3schools.org), [freeCodeCamp](https://freecodecamp.org) etc.
 
-### Things I love
+I love coding and building things in React and NodeJS. I use MongoDB(NoSQL is fun!) and Express framework to build web-servers and APIs(Express, because it is the simplest back-end framework to work with).
 
-- __MERN__: `mongo-express-react-node`, this is what I do all day 😸
-- __JAM__: Latest trend in web development. (If you don't know what JAM Stack is, check [this video](https://youtu.be/Y8PXMbr0Kqo) on YouTube)
-- __Linux__: My favorite OS family. Currently on [Manjaro](http://manjaro.org/)
-- __Open-Source__: I love Open-Source and occasionally contribute to Open-Source Softwares. Check out all my contributions [here](https;//github.com/thisisabdus)
+I have been using GNU/Linux for a few years. And I love it! I started my _Linux_ journey with Ubuntu, tried many other distributions like Linux Mint, Manjaro etc. Among all of them, I feel like Arch & Arch-based distributions are batter. But that's only my point of view.
 
-### Resources I learn from
+Open-Source <i class="fas fa-heart" style="color: #ff0055"></i>
 
-- [The Complete Web Developer Zero to Mastery](https://www.udemy.com/the-complete-web-developer-zero-to-mastery/) (Special thanks to [Andrei  Neagoie](https://twitter.com/AndreiNeagoie))
-- [W3Schools](https://w3schools.org) (Beginner-friendly tutorials and Docs)
-- [Free Code Camp](https://freecodecamp.org) (Org that teaches you how to code for free)
-- [MDN](https://developer.mozilla.org/en-US/) (Lots of web development Docs)
+Don't forget to check out [Zero to Mastery](https://zerotomastery.io)(programming community I belong to), [Andrei Neagoie](https://twitter.com/AndreiNeagoie)(my instructor) and [his courses](https://www.udemy.com/user/andrei-neagoie/).
 
-### Projects I'd love to [Showcase](https://showcase.abdusdev.me)
+If you are looking forward to start learning web development, you won't get anything better than [The Complete Web Developer - Zero to Mastery](https://www.udemy.com/the-complete-web-developer-zero-to-mastery/). Go for it without a second thought. Best thing: Andrei updates it every year with the latest web development contents!
 
-- [chat-app](https://github.com/thisisabdus/chat-app): Chat web-app built using NodeJS and Websockets([Socket.IO](https://socket.io)). Demo website is live [here](https://quick-chat.now.sh)
-- [movie wiki](https://github.com/thisisabdus/movie-wiki): Web-app which will help you search different kind of movies. Built using React. Check the demo [here](https://thisisabdus.github.io/movie-wiki)
-- _... more on [GitHub](https://github.com/thisisabdus)_
+### Contact Me
+
+You can contact me via email at [mail@abdusdev.me](mailto:mail@abdusdev.me). Or any of the following social media platform. I am available on [Twitter](https://twitter.com/thisisabdus). Feel free to drop a message. If you're on discord, my tag is `Abdus#1541`.

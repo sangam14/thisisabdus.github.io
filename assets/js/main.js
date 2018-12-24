@@ -11,7 +11,6 @@ navOpenHandle.addEventListener('click', e => {
     hiddenNav.classList.toggle('show-nav');
     
     if ([...hiddenNav.classList].includes('show-nav')) {
-        console.log('Inside IF')
         body.style.overflow = 'hidden';
         coverHtmlBody.style.display = 'block';
     }
@@ -56,7 +55,12 @@ const writeCommentInHTML = () => {
     .then(data => {
         oldCommentsDiv.innerHTML = '';
         [...data].forEach(val => {
-            oldCommentsDiv.innerHTML += `<p class="comment-card"><strong>${val.userFullName}</strong> says:<br> ${val.commentText} </p>`;
+            if(val.userWebsite) {
+                return oldCommentsDiv.innerHTML += `<p class="comment-card"><strong><a href="${val.userWebsite}">${val.userFullName}</a></strong> says:<br> ${val.commentText} </p>`;
+            } else {
+                return oldCommentsDiv.innerHTML += `<p class="comment-card"><strong>${val.userFullName}</strong> says:<br> ${val.commentText} </p>`;
+            }
+            
         })
     })
 }
