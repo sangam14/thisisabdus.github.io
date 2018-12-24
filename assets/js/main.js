@@ -48,26 +48,41 @@ let links = document.links;
 
 // Handling Comments 
 let commentForm = document.querySelector('#comment-form form');
-fetch('http://localhost:3000/comments?postURL=' + window.location.href)
-.then(data => data.json())
-.then(data => console.log(data))
+let oldCommentsDiv = document.querySelector('#old-comments');
+
+const writeCommentInHTML = () => {
+    fetch('https://comment-system.now.sh/comments?postURL=' + window.location.href)
+    .then(data => data.json())
+    .then(data => {
+        oldCommentsDiv.innerHTML = '';
+        [...data].forEach(val => {
+            oldCommentsDiv.innerHTML += `<p class="comment-card"><strong>${val.userFullName}</strong> says:<br> ${val.commentText} </p>`;
+        })
+    })
+}
+writeCommentInHTML();
 
 
-// add new comment 
-// fetch('http://localhost:3000/comments/new', {
-//     method: 'POST',
-//     body: JSON.stringify({
-//         "commentText": "This 2nd Comment is From Fetch",
-//         "userFullName": "Abdus Samad",
-//         "userEmail": "azad3652@gmail.me",
-//         "userWebsite": "https://abdus.in",
-//         "postURL": window.location.href,
-//     }),
-//     headers: {
-//         "Content-Type": "application/json"
-//     },
+commentForm.addEventListener('submit', e => {
+    e.preventDefault();
+    let formdata = {};
 
-// })
-// .then(data => data.json())
-// .then(data => console.log(data))
-// .catch(err => console.log(err))
+    for(let i = 0; i < commentForm.length - 1; i++) {
+        formdata[commentForm[i].name] = commentForm[i].value;
+    }
+    formdata.postURL = window.location.href;
+
+    fetch('https://comment-system.now.sh/comments/new', {
+        method: 'POST',
+        body: JSON.stringify(formdata),
+        headers: {
+            "Content-Type": "application/json"
+        },
+    })
+    .then(data => data.json())
+    .then(data => {
+        writeCommentInHTML();
+        document.querySelector('#comment-form .success-message').innerHTML = 'Comment Posted.';
+    })
+    .catch(err => console.log(err))
+})

@@ -334,15 +334,24 @@ footer {
             padding: .5rem;
             margin: .2rem 0;
             border: 0;
-            border-bottom: 2px solid lightgray;
+            border: 2px solid lightgray;
+            font-family: inherit; 
+            font-size: inherit;
 
             &[type="submit"] {
-                background: #ff0055;
-                color: #fff;
+                background: lightgray;
+                color: #2b2b2b;
                 width: auto;
                 padding: 1rem;
                 border: 1px solid transparent;
                 border-radius: 3px;
+                cursor: pointer;
+                transition: 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55) all;
+                
+                &:hover { 
+                    background: #ff0055; 
+                    color: #fff; 
+                }
 
                 @media (max-width: 800px) {
                     & {
