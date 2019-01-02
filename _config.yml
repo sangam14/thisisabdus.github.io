@@ -17,8 +17,8 @@ title: Abdus Samad Azad
 email: mail@abdusdev.me
 author: Abdus
 description: >- # this means to ignore newlines until "baseurl:"
-  I am Abdus, a web developer living in India. Currently I am learning how to develop better web applications using React and Node JS.
-baseurl: "/jekyll-blog-theme" # the subpath of your site, e.g. /blog
+  I am Abdus, a web developer living in India. Currently, I am learning how to develop better web applications using React and Node JS.
+baseurl:  # the subpath of your site, e.g. /blog
 url: "https://abdusdev.me" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: thisisAbdus
 github_username:  thisisAbdus

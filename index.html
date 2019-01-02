@@ -3,6 +3,7 @@
 ---
 
 <div id="hero">
+  <div id="particles-js"></div>
   <h1 class="salutation">Hi there!</h1>
   <div class="about-author">
     {{ site.description }} <a href="{{ '/about/' | relative_url }}">Read More</a>
@@ -78,3 +79,9 @@
     <h1>Project</h1>
   </div>
 </div> -->
+
+
+<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+  particlesJS.load("particles-js", "{{ '/assets/js/particlesjs-config.json' | relative_url }}", (err) => console.log(err));
+</script>
