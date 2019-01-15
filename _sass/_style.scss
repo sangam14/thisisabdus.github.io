@@ -14,16 +14,8 @@ nav {
     & .nav-handle {
         text-align: center;
         cursor: pointer;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        color: #fff;
-        background: #ff0055;
+        color: #ff0055;
         font-family: 'Oswald', sans-serif;
-        
-        &:hover {
-            box-shadow: 0 0 5px 0 #363636;
-        }
     }
 }
 
@@ -101,6 +93,7 @@ nav {
         3. .pagination
 */
 .section-title {
+    margin-bottom: 3rem;
     text-align: center;
     color: $primary-color;
 
@@ -120,18 +113,28 @@ nav {
     }
 
     & .post {
-        padding: .6rem;
-        margin-top: 3rem;
+        padding: 0 1rem;
         transition: .8s $transition-backward all;
     }
 
-    & .author {
-        color: #19244783;
-    }
+    & .blog-title {
+        padding: .4rem 0;
+        font-weight: 100;
+        font-family: 'Karla', sans-serif;
 
-    & .blog-title a {
-        text-decoration: none;
-        color: $primary-color;
+        & small {
+            color: #1ecf8585;
+            margin-left: 10px;
+
+            &:hover {
+                color: #1ecf85;
+            }
+        }
+
+        & a {
+            text-decoration: none;
+            color: $primary-color;
+        }
     }
 
     & .excerpt {

@@ -11,6 +11,13 @@ i { vertical-align: middle; }
     background: #ff0055;
 }
 
+.bottom-border-full {
+    height: 1px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background: lightgray;    
+}
+
 .text-color-opacity-5 {
     color: $text-color-opacity-half;
 }

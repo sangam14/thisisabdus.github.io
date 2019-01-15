@@ -42,14 +42,15 @@
   <!-- This loops through the paginated posts -->
   {% for post in paginator.posts %}
     <div class="post">
-      <div class="author">
-        <div class="date"><span class="text-color-opacity-5">Posted On</span> {{ post.date | date: "%b %d, %y" }}</div>
-      </div>
-      <h3 class="blog-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      <div class="bottom-border"></div>
-      <p class="excerpt">
-        {{ post.excerpt | strip_html }}
-      </p>
+      <h3 class="blog-title">
+        {% if post.link_post %}
+          <a href="{{ post.link_post }}">{{ post.title }}</a>
+        {% else %}
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        {% endif %}
+        <small>{{ post.date | date: "%b %d, %y" }}</small>
+      </h3>
+      <div class="bottom-border-full"></div>
     </div>
   {% endfor %}
 

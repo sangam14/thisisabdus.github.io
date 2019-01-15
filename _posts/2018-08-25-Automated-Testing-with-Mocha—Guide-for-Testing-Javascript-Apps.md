@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Automated Testing with Mocha — Guide for Testing Javascript Apps
+link_post: https://medium.com
 categories: [ nodejs ]
 ---
 Testing is what everyone should be taking care of while deploying their awesome apps for production. It’s necessary to test applications before deploying as it helps us to ensure that apps met required quality mark and encounter fewer post-production bugs as compared to the applications which ain’t tested before.
