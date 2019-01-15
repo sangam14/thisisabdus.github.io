@@ -3,6 +3,7 @@ layout: post
 title: Set-up SSL in Node JS and Express using openSSL
 tags: [SSL, Express, NodeJS, HTTPs]
 categories: [nodejs, server-side]
+link_post: https://medium.com/@thisisAbdus/set-up-ssl-in-nodejs-and-express-using-openssl-f2529eab5bb
 ---
 
 This a simple, easy-to-follow tutorial on how to serve pages over _https_ in _Node JS_ using _Express_ Framework. 
