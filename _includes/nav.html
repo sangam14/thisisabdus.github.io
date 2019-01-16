@@ -1,74 +1,8 @@
 <nav>
-    <h1 class="nav-handle" id="nav-open"><i class="fas fa-bars"></i></h1>
-</nav>
-<div class="hidden-nav" id="hidden-nav">
-    <h1 class="nav-close" id="nav-close"><i class="far fa-times-circle"></i></h1>
-    <div class="nav-content">
-        
-        <!-- Navigation Links -->
-        <div class="header">Site Navigation</div>
-        <div class="bottom-border"></div>
-
-        <a class="nav-btn" href="{{ '/' | relative_url }}">Home</a>
-        {% include sitePageListing.html %}
-        <a class="nav-btn" href="https://cdn.abdusdev.me/docs/pdf/resume.pdf">Resume</a>
-
-
-        <!-- SITE CATEGORIES -->
-        <div class="header">Categories</div>
-        <div class="bottom-border"></div>
-
-        {% include siteCategoryListing.html %}
-
-
-        <!-- Commit Status  -->
-        <div class="header">Commit Status</div>
-        <div class="bottom-border"></div>
-
-        <a href="https://sourcerer.io/thisisabdus" target="_blank"><img src="https://img.shields.io/badge/JavaScript-274%20commits-orange.svg" alt=""></a>
-        <a href="https://sourcerer.io/thisisabdus" target="_blank"><img src="https://img.shields.io/badge/Shell-4%20commits-orange.svg" alt=""></a>
-        <a href="https://sourcerer.io/thisisabdus" target="_blank"><img src="https://img.shields.io/badge/HTML-197%20commits-orange.svg" alt=""></a>
-        <a href="https://sourcerer.io/thisisabdus" target="_blank"><img src="https://img.shields.io/badge/CSS-215%20commits-orange.svg" alt=""></a>
-
-        
-        <!-- Recent Posts Links -->
-        <div class="header">Recent Posts</div>
-        <div class="bottom-border"></div>
-
-        {% for post in site.posts limit:4 %}
-            <div class="post">
-                <h3 class="blog-title">
-                    {% if post.link_post %}
-                        <a href="{{ post.link_post }}">{{ post.title }}</a>
-                    {% else %}
-                        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                    {% endif %}
-                    <small>{{ post.date | date: "%b %d, %y" }}</small>
-                </h3>
-                <div class="bottom-border-full"></div>
-            </div>
-        {% endfor %}
-
-
-        <!-- Sub Domains Links -->
-        <div class="header">Sub Domains</div>
-        <div class="bottom-border"></div>
-
-        <a class="nav-btn" href="https://showcase.abdusdev.me" target="_blank">showcase</a>
-        <a class="nav-btn" href="https://blog.abdusdev.me" target="_blank">blog</a>
-
-
-        <!-- External Links -->
-        <div class="header">External Links</div>
-        <div class="bottom-border"></div>
-
-        <a class="nav-btn" href="https://github.com/thisisabdus" target="_blank">GitHub</a>
-        <a class="nav-btn" href="https://freecodecamp.org/thisisabdus" target="_blank">Free Code Camp</a>
-        <a class="nav-btn" href="https://sourcerer.io/thisisabdus" target="_blank">Sourcerer</a>
-        <a class="nav-btn" href="https://gitlab.com/thisisabdus" target="_blank">GitLab</a>     
-
+    <div class="logo"><a href="/">@thisisAbdus</a></div>
+    <div class="links">
+        <a href="https://showcase.abdusdev.me">showcase</a>
+        <a href="/about/">about</a>
+        <a href="/contact/">contact</a>
     </div>
-</div>
-
-<!-- This div will put an screen bottom of the 'open' nav so that user won't be able to click body links -->
-<div id="nav-bottom-screen"></div>
+</nav>

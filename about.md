@@ -1,5 +1,5 @@
 ---
-    layout: page
+    layout: post
     title: About Me
     permalink: /about/
 ---
@@ -14,7 +14,7 @@ I love coding and building things in React and NodeJS. I use MongoDB(NoSQL is fu
 
 I have been using GNU/Linux for a few years. And I love it! I started my _Linux_ journey with Ubuntu, tried many other distributions like Linux Mint, Manjaro etc. Among all of them, I feel like Arch & Arch-based distributions are batter. But that's only my point of view.
 
-Open-Source <i class="fas fa-heart" style="color: #ff0055"></i>
+Open-Source <3<!-- <i class="fas fa-heart" style="color: #ff0055"></i> -->
 
 Don't forget to check out [Zero to Mastery](https://zerotomastery.io)(programming community I belong to), [Andrei Neagoie](https://twitter.com/AndreiNeagoie)(my instructor) and [his courses](https://www.udemy.com/user/andrei-neagoie/).
 

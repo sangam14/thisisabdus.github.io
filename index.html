@@ -1,88 +1,91 @@
 ---
-  layout: default
+layout: default
 ---
 
-<div id="hero">
-  <div id="particles-js"></div>
-  <h1 class="salutation">Hi there!</h1>
-  <div class="about-author">
-    {{ site.description }} <a href="{{ '/about/' | relative_url }}">Read More</a>
-  </div>
-  <div class="social">
 
-    <span class="fa-stack fa-2x">
-      <i class="fa fa-circle fa-stack-2x icon-background"></i>
-      <a href="https://twitter.com/thisisAbdus"><i class="fab fa-twitter fa-stack-1x"></i></a>
-    </span>
-
-    <span class="fa-stack fa-2x">
-      <i class="fa fa-circle fa-stack-2x icon-background"></i>
-      <a href="https://github.com/thisisAbdus"><i class="fab fa-github fa-stack-1x"></i></a>
-    </span>
-
-    <span class="fa-stack fa-2x">
-      <i class="fa fa-circle fa-stack-2x icon-background"></i>
-      <a href="https://stackoverflow.com/story/thisisAbdus"><i class="fab fa-stack-overflow fa-stack-1x"></i></a>
-    </span>
-
-    <!-- <span class="fa-stack fa-2x">
-      <i class="fa fa-circle fa-stack-2x icon-background"></i>
-      <a href="#" title="Tag: Abdus#1541"><i class="fab fa-discord fa-stack-1x"></i></a>
-    </span> -->
-    
-  </div>
-</div>
-
-
-<div id="blog-posts" class="margin-top-6rem">
-  <div class="section-title">
-    <h1>Blog</h1>
-    <!-- <div class="bottom-border"></div> -->
-  </div>
-  <!-- This loops through the paginated posts -->
-  {% for post in paginator.posts %}
-    <div class="post">
-      <h3 class="blog-title">
-        {% if post.link_post %}
-          <a href="{{ post.link_post }}">{{ post.title }}</a>
-        {% else %}
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        {% endif %}
-        <small>{{ post.date | date: "%b %d, %y" }}</small>
-      </h3>
-      <div class="bottom-border-full"></div>
+<div class="main">
+  <header>
+    <h1 class="title">abdus samad azad <small class="gray-text small-text">@thisisAbdus</small></h1>
+    <div class="social">
+      Social: 
+      <a href="https://twitter.com/thisisabdus">Twitter</a>
+      <a href="https://medium.com/@thisisabdus">Medium</a>
+      <a href="https://github.com/thisisabdus">GitHub</a>
+      <a href="https://linkedin.com/in/thisisabdus">LinkedIn</a>
     </div>
-  {% endfor %}
+    <section>
+      <h3 class="section-header">Intro</h3>
+      <div class="intro">
+        Indian Web Developer, looking for a position to fit himself in software industry. Loves Linux systems and open-source. Open to remote works. contact <a href="https://twitter.com/thisisabdus">@thisisabdus</a>
+      </div>
+    </section>
+  </header>
 
-  <!-- Pagination links -->
-  <div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}#blog-posts" class="previous">
-      Previous
-    </a>
-  {% else %}
-    <span class="previous">Previous</span>
-  {% endif %}
-  <span class="page_number ">
-    {{ paginator.page }} of {{ paginator.total_pages }}
-  </span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}#blog-posts" class="next">Next</a>
-  {% else %}
-    <span class="next ">Next</span>
-  {% endif %}
-  </div>
+  <section>
+    <h3 class="section-header">Blog Posts <span class="gray-text">(<=10)</span></h3>
+    <div class="blog-posts">
+      {% for post in paginator.posts %}
+        <div class="post">
+          <div class="blog-title">
+            {% if post.link_post %}
+              <a href="{{ post.link_post }}">{{ post.title }}</a>
+              <small>{{ post.date | date: "%b %d, %y" }} &middot; Medium&neArr;</small>
+            {% else %}
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              <small>{{ post.date | date: "%b %d, %y" }}</small>
+            {% endif %}
+          </div>
+          <div class="bottom-border-full"></div>
+        </div>
+      {% endfor %}
+    </div>
+    <!-- Pagination links -->
+    <div class="pagination">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | relative_url }}#blog-posts" class="previous">
+          Previous
+        </a>
+      {% else %}
+        <span class="previous">Previous</span>
+      {% endif %}
+      
+      <span class="page_number ">
+        {{ paginator.page }} of {{ paginator.total_pages }}
+      </span>
+
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | relative_url }}#blog-posts" class="next">Next</a>
+      {% else %}
+        <span class="next ">Next</span>
+      {% endif %}
+  </section>
+
+  <section>
+    <h3 class="section-header">projects</h3>
+    <div>
+      <ol type="i">
+        <li>
+          <a href="https://github.com/thisisabdus/movie-wiki">movie-wiki</a> - a web-app built using reactjs. Key features are: search through different kind of movies & casts, check ratings, find out related movies to watch later! <br>
+          <a href="https://thisisabdus.github.io/movie-wiki">demo</a> &middot; <a href="https://github.com/thisisabdus/movie-wiki">github</a>
+        </li>
+        <li>
+          <a href="https://github.com/thisisabdus/movie-wiki">chat-app</a> - real-time chatt application. Libraries used are: <a href="https://socket.io">socket.io</a>, <a href="https://expressjs.com">expressjs</a> <br>
+          <a href="https://thisisabdus.github.io/chatt-app">demo</a>
+        </li>
+      </ol>
+      <a href="https://showcase.abdusdev.me">... more</a>
+    </div>
+  </section>
+
+  <section>
+    <h3 class="section-header">Sub-domains</h3>
+    <div>
+      <ol type="1">
+        <li><a href="https://showcase.abdusdev.me">showcase.abdusdev.me</a> - all of my projects are listed here</li>
+        <li><a href="https://logo.abdusdev.me">logo.abdusdev.me</a> - repository of logos to import in any web project quickly and easily</li>
+        <li><a href="https://blog.abdusdev.me">blog.abdusdev.me</a> - redirects here</li>
+        <li><a href="https://cdn.abdusdev.me">cdn.abdusdev.me</a> - not exactly a CDN. for hosting mini projects and scripts </li>
+      </ol>
+    </div>
+  </section>
 </div>
-
-
-<!-- <div id="projects" class="margin-top-6rem">
-  <div class="section-title">
-    <h1>Project</h1>
-  </div>
-</div> -->
-
-
-<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script>
-  particlesJS.load("particles-js", "{{ '/assets/js/particlesjs-config.json' | relative_url }}", (err) => console.log(err));
-</script>
