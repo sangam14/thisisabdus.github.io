@@ -4,22 +4,21 @@ layout: default
 
 
 <div class="main">
-  <div class="message">
+  <!-- <div class="message">
     this site is still under constraction. Yes, <strong>under construction</strong> even after deployment xD 
-  </div>
+  </div> -->
   <header>
     <h1 class="title">abdus samad azad <small class="gray-text small-text">@thisisAbdus</small></h1>
-    <div class="social">
-      Social: 
-      <a href="https://twitter.com/thisisabdus">Twitter</a>
-      <a href="https://medium.com/@thisisabdus">Medium</a>
-      <a href="https://github.com/thisisabdus">GitHub</a>
-      <a href="https://linkedin.com/in/thisisabdus">LinkedIn</a>
-    </div>
     <section>
-      <h3 class="section-header">Intro</h3>
       <div class="intro">
         {{ site.description }}
+      </div>
+      <div class="social">
+        Social: 
+        <a href="https://twitter.com/thisisabdus">Twitter</a>
+        <a href="https://medium.com/@thisisabdus">Medium</a>
+        <a href="https://github.com/thisisabdus">GitHub</a>
+        <a href="https://linkedin.com/in/thisisabdus">LinkedIn</a>
       </div>
     </section>
   </header>
@@ -32,10 +31,10 @@ layout: default
           <div class="blog-title">
             {% if post.link_post %}
               <a href="{{ post.link_post }}">{{ post.title }}</a>
-              <small>Medium&neArr; &middot; {{ post.date | date: "%b %d, %y" }}</small>
+              <span>Medium&neArr; &middot; {{ post.date | date: "%b %d, %y" }}</span>
             {% else %}
               <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-              <small>{{ post.date | date: "%b %d, %y" }}</small>
+              <span>{{ post.date | date: "%b %d, %y" }}</span>
             {% endif %}
           </div>
           <div class="bottom-border-full"></div>
@@ -61,25 +60,5 @@ layout: default
       {% else %}
         <span class="next ">Next</span>
       {% endif %} -->
-  </section>
-
-
-  <!-- <section>
-    <h3 class="section-header">resume</h3>
-    <div>
-      <iframe src="https://cdn.abdusdev.me/docs/pdf/resume.pdf" frameborder="0" width="100%" height="600px"></iframe>
-    </div>
-  </section> -->
-
-  <section>
-    <h3 class="section-header">Sub-domains</h3>
-    <div>
-      <ol type="1">
-        <li><a href="https://showcase.abdusdev.me">showcase.abdusdev.me</a> - all of my projects are listed here</li>
-        <li><a href="https://logo.abdusdev.me">logo.abdusdev.me</a> - repository of logos to import in any web project quickly and easily</li>
-        <li><a href="https://blog.abdusdev.me">blog.abdusdev.me</a> - redirects here</li>
-        <li><a href="https://cdn.abdusdev.me">cdn.abdusdev.me</a> - not exactly a CDN. for hosting mini projects and scripts </li>
-      </ol>
-    </div>
   </section>
 </div>

@@ -7,6 +7,7 @@
     repo: https://github.com/thisisabdus/chat-app
     demo: https://quick-chat.now.sh
     download: https://github.com/thisisabdus/chat-app/archive/master.zip
+    blog: 
     
 - name: Voice Control System (NLUI-like)
   status: in-progress #completed | in-progress | failed
@@ -17,6 +18,7 @@
     repo: https://gitlab.com/thisisabdus/nlui
     demo: 
     download: https://gitlab.com/thisisabdus/nlui/-/archive/master/nlui-master.zip
+    blog: 
 
 - name: FCC Tribute Website 
   status: completed #completed | in-progress | failed
@@ -27,6 +29,7 @@
     repo: https://github.com/thisisabdus/fcc-certification/tribute-page/
     demo: http://thisisabdus.github.io/fcc-certification/tribute-page/
     download: 
+    blog: 
 
 - name: FCC Survey Form
   status: completed #completed | in-progress | failed
@@ -37,6 +40,7 @@
     repo: https://github.com/thisisabdus/fcc-certification/survey-form/
     demo: http://thisisabdus.github.io/fcc-certification/survey-form/
     download:
+    blog: 
 
 - name: LinkedIn Auto Invite
   status: completed #completed | in-progress | failed
@@ -47,6 +51,7 @@
     repo: 
     demo: 
     download: 
+    blog: 
 
 - name: Resource Website for Devs
   status: completed #completed | in-progress | failed
@@ -57,6 +62,7 @@
     repo: https://github.com/thisisabdus/resource-website/
     demo: https://devresource.now.sh
     download: https://github.com/thisisabdus/resource-website/archive/master.zip
+    blog:
 
 - name: Hyde with Enhancement
   status: completed #completed | in-progress | failed
@@ -67,6 +73,7 @@
     repo: https://github.com/thisisabdus/hyde-with-enhancement/
     demo: https://thisisabdus.github.io/hyde-with-enhancement/
     download: https://github.com/thisisabdus/hyde-with-enhancement/archive/master.zip
+    blog: 
 
 - name: HTML5 Video Player
   status: completed #completed | in-progress | failed
@@ -77,7 +84,8 @@
     repo: https://github.com/thisisabdus/html5-video-player/
     demo: http://thisisabdus.github.io/html5-video-player/
     download: https://github.com/thisisabdus/html5-video-player/archive/master.zip
-    
+    blog: 
+
 - name: Node Blog API
   status: failed #completed | in-progress | failed
   description: API for building blogging websites using Node JS on back-end. And HTML & CSS, JS on front-end.
@@ -87,6 +95,7 @@
     repo: https://github.com/thisisabdus/node-blog-api/
     demo: 
     download: https://github.com/thisisabdus/node-blog-api/archive/master.zip
+    blog:
 
 - name: Movie Wiki
   status: completed #completed | in-progress | failed
@@ -97,6 +106,7 @@
     repo: https://github.com/thisisabdus/movie-wiki/
     demo: https://thisisabdus.github.io/movie-wiki/
     download: https://github.com/thisisabdus/movie-wiki/archive/master.zip
+    blog: /create-a-movie-search-engine-using-react-and-tmdb-api
 
 - name: Social Media Platform
   status: failed #completed | in-progress | failed
@@ -107,7 +117,7 @@
     repo: https://gitlab.com/thisisabdus/social-media-website.git
     demo: 
     download: 
-        
+    blog:
 - name: Weather Forecast App
   status: completed #completed | in-progress | failed
   description: A web app which will give you the current weather information based on your location. It needs device location access.
@@ -117,6 +127,7 @@
     repo: https://github.com/thisisabdus/weather-app/
     demo: https://thisisabdus.github.io/weather-app/
     download: https://github.com/thisisabdus/weather-app/archive/master.zip
+    blog:
 
 - name: GoldenFalcon
   status: completed #completed | in-progress | failed
@@ -127,6 +138,7 @@
     repo: https://github.com/thisisabdus/goldenfalcon/
     demo:
     download: https://github.com/thisisabdus/goldenfalcon/archive/master.zip
+    blog:
 
 - name: Url Shortner
   status: completed #completed | in-progress | failed
@@ -137,6 +149,7 @@
     repo: https://github.com/thisisabdus/url-shortener
     demo: https://url-shorten121.herokuapp.com/
     download: https://github.com/thisisabdus/url-shortener/archive/master.zip
+    blog: 
 
 - name: Gradient Generator
   status: completed #completed | in-progress | failed
@@ -147,6 +160,7 @@
     repo: https://github.com/thisisabdus/background-gradient-generator/
     demo: https://thisisabdus.github.io/background-gradient-generator/
     download: https://github.com/thisisabdus/background-gradient-generator/archive/master.zip
+    blog:
 
 - name: Photo Editor
   status: completed #completed | in-progress | failed
@@ -157,6 +171,7 @@
     repo: https://github.com/thisisabdus/photo-editor/
     demo: https://thisisabdus.github.io/photo-editor/
     download: https://github.com/thisisabdus/photo-editor/archive/master.zip
+    blog:
 
 - name: ToDo App(front-end only)
   status: completed #completed | in-progress | failed
@@ -167,6 +182,7 @@
     repo: https://github.com/thisisabdus/todo-app/
     demo: https://thisisabdus.github.io/todo-app/
     download: https://github.com/thisisabdus/todo-app/archive/master.zip
+    blog:
 
 - name: Pixel Art Maker
   status: completed #completed | in-progress | failed
@@ -177,6 +193,7 @@
     repo: https://github.com/thisisabdus/pixel-art-maker
     demo: https://thisisabdus.github.io/pixel-art-maker
     download: 
+    blog:
 
 - name: InspiroTab
   status: completed #completed | in-progress | failed
@@ -187,7 +204,8 @@
     repo: https://github.com/thisisabdus/InspiroTab
     demo: 
     download: https://github.com/thisisabdus/InspiroTab/archive/master.zip
-
+    blog:
+        
 - name: LinkClick
   status: completed #completed | in-progress | failed
   description: A chrome extension which will enable you to reach your favorite website quickly. 
@@ -197,3 +215,4 @@
     repo: https://github.com/thisisabdus/linkclick
     demo: 
     download: https://github.com/thisisabdus/linkclick/archive/master.zip
+    blog:

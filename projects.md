@@ -13,13 +13,16 @@ permalink: /projects/
     <div>
         <strong>external: </strong>
         {% if project.url.repo %}
-            <a href="{{ project.url.repo }}">Repo</a>
+            <a href="{{ project.url.repo }}">Repo</a> &middot;
         {% endif %}
         {% if project.url.demo %}
-            <a href="{{ project.url.demo }}">Demo</a>
+            <a href="{{ project.url.demo }}">Demo</a> &middot;
         {% endif %}
         {% if project.url.download %}
-            <a href="{{ project.url.download }}">Download</a>
+            <a href="{{ project.url.download }}">Download</a> &middot;
+        {% endif %}
+        {% if project.url.blog %}
+            <a href="{{ project.url.blog }}">blog</a> &middot;
         {% endif %}
     </div>
 </div>

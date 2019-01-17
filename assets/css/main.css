@@ -5,12 +5,12 @@ html {
     transition: .5s ease-in-out background-color;
 }
 .light-theme {
-    --main-text-color: #727272;
+    --main-text-color: #4b4b4b;
     --h-color: #000000;
     background: #ffffff;
 }
 .light-theme a {
-    color: teal;
+    color: #2c942c;
     text-decoration: none;
 }
 .light-theme strong {
@@ -67,7 +67,7 @@ a:hover {
 }
 .social {
     font-size: 1rem;
-    margin-bottom: 1.8rem; 
+    margin-top: 1.8rem; 
 }
 
 .social a {
@@ -119,7 +119,7 @@ section > div {
     color: var(--main-text-color);
     text-decoration: none;
 }
-.blog-posts .post small {
+.blog-posts .post span {
     color: #2c942ca9;
 }
 
