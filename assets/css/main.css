@@ -10,19 +10,23 @@ html {
     background: #ffffff;
 }
 .light-theme a {
+    color: teal;
     text-decoration: none;
 }
+.light-theme strong {
+    color: #000000;
+}
 * {
+    font-weight: 100;
     color: var(--main-text-color);
     box-sizing: border-box;
     font-family: 'Thasadith', sans-serif;
     background: inherit;
-    line-height: 30px;
 }
 body {
     background: inherit;
     margin: 0;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-transform: lowercase;
 }
 nav {
@@ -31,14 +35,16 @@ nav {
     align-items: center;
     justify-content: space-between;
     margin: auto;
-    padding: 20px 0;
-    border-bottom: 1px solid var(--main-text-color);
+    padding: 20px 10px;
+    /* border-bottom: 1px solid var(--main-text-color); */
+    box-shadow: 0 8px 6px -6px var(--main-text-color);
 }
 nav .logo a {
     font-weight: 700;
     color: var(--h-color);
 }
-h1 {
+h1, h2, h3, 
+h4, h5, h6 {
     font-weight: 700;
     margin: 1.8rem inherit;
 }
@@ -54,10 +60,10 @@ pre.highlight {
 a {
     text-decoration: underline;
     color: var(--main-text-color);
-    transition: .5s ease-in-out color;
+    transition: .2s cubic-bezier(.68,-0.55,.27,1.55) all;
 }
 a:hover {
-    color: #313131!important;
+    color: #313131;
 }
 .social {
     font-size: 1rem;
@@ -70,15 +76,18 @@ a:hover {
     color: #2c942c;
     /* border: 1px solid red; */
 }
-.section-header {
+section .section-header {
     color: var(--h-color);
     margin-top: 2.6rem;
+}
+section > div {
+    width: 95%;
+    margin: auto;
 }
 .main {
     width: 60%;
     margin: auto;
 }
-
 .title {
     color: var(--h-color);
     display: flex;
@@ -89,25 +98,6 @@ a:hover {
     margin: 0 10px;
 }
 
-@media (max-width: 800px) {
-    nav {
-        text-align: center;
-        width: 100%;
-        padding: 20px 4px;
-        display: block;
-    }
-    .main {
-        width: 95%;
-    }
-    .title {
-        display: block;
-    }
-    .title small {
-        display: block;
-        margin: 0;
-    }
-}
-
 .intro {
     color: var(--main-text-color);
 }
@@ -115,6 +105,15 @@ a:hover {
 .blog-posts .post {
     padding: 11px 0;
     border-bottom: 1px solid #a3a3a371;
+}
+.blog-posts .post .blog-title {
+    display: flex;
+    justify-content: space-between;
+}
+.blog-posts .post .blog-title a:hover {
+    text-indent: 10px;
+    color: teal;
+
 }
 .blog-posts .post a {
     color: var(--main-text-color);
@@ -153,9 +152,34 @@ a:hover {
 .post-page h5, .post-page h6 {
     color: var(--h-color);
 }
-.post-page a {
-    color: var(--main-text-color);
-    text-decoration: underline;
+
+@media (max-width: 800px) {
+    nav {
+        text-align: center;
+        width: 100%;
+        padding: 20px 4px;
+        display: block;
+    }
+    .main {
+        width: 95%;
+    }
+    .title {
+        display: block;
+    }
+    .title small {
+        display: block;
+        margin: 0;
+    }
+    .blog-posts .post .blog-title {
+        display: block;
+    }
+}
+
+.project {
+    margin-top: 3rem;
+}
+.project h2 {
+    margin: 1rem 0;
 }
 
 
@@ -167,8 +191,17 @@ footer {
     padding: 4rem 0;
 }
 .small-text {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 .gray-text {
     color: #a3a3a3;
+}
+strong {
+    color: #fff;
+}
+.message {
+    background: #80f5f5;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 4px;
 }

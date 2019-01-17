@@ -4,6 +4,9 @@ layout: default
 
 
 <div class="main">
+  <div class="message">
+    this site is still under constraction. Yes, <strong>under construction</strong> even after deployment xD 
+  </div>
   <header>
     <h1 class="title">abdus samad azad <small class="gray-text small-text">@thisisAbdus</small></h1>
     <div class="social">
@@ -22,14 +25,14 @@ layout: default
   </header>
 
   <section>
-    <h3 class="section-header">Blog Posts <span class="gray-text">(<=10)</span></h3>
+    <h3 class="section-header">Blog Posts</h3>
     <div class="blog-posts">
-      {% for post in paginator.posts %}
+      {% for post in site.posts %}
         <div class="post">
           <div class="blog-title">
             {% if post.link_post %}
               <a href="{{ post.link_post }}">{{ post.title }}</a>
-              <small>{{ post.date | date: "%b %d, %y" }} &middot; Medium&neArr;</small>
+              <small>Medium&neArr; &middot; {{ post.date | date: "%b %d, %y" }}</small>
             {% else %}
               <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
               <small>{{ post.date | date: "%b %d, %y" }}</small>
@@ -40,7 +43,7 @@ layout: default
       {% endfor %}
     </div>
     <!-- Pagination links -->
-    <div class="pagination">
+    <!-- <div class="pagination">
       {% if paginator.previous_page %}
         <a href="{{ paginator.previous_page_path | relative_url }}#blog-posts" class="previous">
           Previous
@@ -57,25 +60,16 @@ layout: default
         <a href="{{ paginator.next_page_path | relative_url }}#blog-posts" class="next">Next</a>
       {% else %}
         <span class="next ">Next</span>
-      {% endif %}
+      {% endif %} -->
   </section>
 
-  <section>
-    <h3 class="section-header">projects</h3>
+
+  <!-- <section>
+    <h3 class="section-header">resume</h3>
     <div>
-      <ol type="i">
-        <li>
-          <a href="https://github.com/thisisabdus/movie-wiki">movie-wiki</a> - a web-app built using reactjs. Key features are: search through different kind of movies & casts, check ratings, find out related movies to watch later! <br>
-          <a href="https://thisisabdus.github.io/movie-wiki">demo</a> &middot; <a href="https://github.com/thisisabdus/movie-wiki">github</a>
-        </li>
-        <li>
-          <a href="https://github.com/thisisabdus/movie-wiki">chat-app</a> - real-time chatt application. Libraries used are: <a href="https://socket.io">socket.io</a>, <a href="https://expressjs.com">expressjs</a> <br>
-          <a href="https://thisisabdus.github.io/chatt-app">demo</a>
-        </li>
-      </ol>
-      <a href="https://showcase.abdusdev.me">... more</a>
+      <iframe src="https://cdn.abdusdev.me/docs/pdf/resume.pdf" frameborder="0" width="100%" height="600px"></iframe>
     </div>
-  </section>
+  </section> -->
 
   <section>
     <h3 class="section-header">Sub-domains</h3>
