@@ -24,9 +24,9 @@ layout: default
   </header>
 
   <section>
-    <h3 class="section-header">Blog Posts</h3>
+    <h3 class="section-header">Blog Posts <small class="gray-text">(recent 5)</small></h3>
     <div class="blog-posts">
-      {% for post in site.posts %}
+      {% for post in site.posts limit: 5%}
         <div class="post">
           <div class="blog-title">
             {% if post.link_post %}
@@ -41,24 +41,7 @@ layout: default
         </div>
       {% endfor %}
     </div>
-    <!-- Pagination links -->
-    <!-- <div class="pagination">
-      {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | relative_url }}#blog-posts" class="previous">
-          Previous
-        </a>
-      {% else %}
-        <span class="previous">Previous</span>
-      {% endif %}
-      
-      <span class="page_number ">
-        {{ paginator.page }} of {{ paginator.total_pages }}
-      </span>
-
-      {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | relative_url }}#blog-posts" class="next">Next</a>
-      {% else %}
-        <span class="next ">Next</span>
-      {% endif %} -->
+    <br>
+    ... more on <a href="/blog/">blog page</a>
   </section>
 </div>
