@@ -30,12 +30,11 @@
 {% endif %}
 
 
-<meta name="og:title" content="{{ title }}"/>
-<meta name="og:url" content="{{ url }}"/>
-<meta name="og:image" content="{{ metaimg }}"/>
+<meta property="og:title" content="{{ title }}"/>
+<meta property="og:url" content="{{ url }}"/>
 <meta property="og:image" content="{{ metaimg }}"/>
-<meta name="og:site_name" content="{{ title }}"/>
-<meta name="og:description" content="{{ page.excerpt | strip_html }}"/>
+<meta property="og:site_name" content="{{ title }}"/>
+<meta property="og:description" content="{{ page.excerpt | strip_html }}"/>
 
 <!-- Twitter -->
 <meta name="twitter:site" content="{{ site.twitter_username }}">
