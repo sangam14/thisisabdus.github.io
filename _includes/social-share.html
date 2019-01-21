@@ -1,0 +1,11 @@
+<div style="margin-top: 50px" class="social-search">
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}"><img class="icon" src="{{ '/assets/img/icons/facebook.svg' | absolute_url }}" alt="facebook share"></a>
+
+    <a href="https://twitter.com/home?status={{ page.excerpt | strip_html | truncate: 120, '...' }} - {{ page.url | absolute_url }}"><img src="{{ '/assets/img/icons/twitter.svg' | absolute_url }}" alt="" class="icon"></a>
+    
+    <a href="https://plus.google.com/share?url={{ page.url | absolute_url }}"><img src="{{ '/assets/img/icons/googleplus.svg' | absolute_url }}" alt="" class="icon"></a> 
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title={{ page.title }}&summary={{ page.excerpt | strip_html }}&source="><img src="{{ '/assets/img/icons/linkedin.svg' | absolute_url }}" alt="" class="icon"></a> 
+    
+    <a href="mailto:?&bcc=azad3652@gmail.com&subject={{ page.title }}&body={{ page.excerpt | strip_html }}"><img src="{{ '/assets/img/icons/email.svg' | absolute_url }}" alt="" class="icon"></a>
+</div>

@@ -213,3 +213,8 @@ strong {
         padding: 10px 25px;
     }
 }
+.icon {
+    height: 30px;
+    width: 30px;
+    margin: 0 2px;
+}
