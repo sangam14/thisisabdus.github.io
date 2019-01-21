@@ -4,8 +4,9 @@ title: How to Get a Custom Email Address for Free
 categories: [ miscellaneous ]
 ---
 
-<p class="message">This article assumes that you have basic knowledge about configuring DNS for a domain.</p>
 A Few days ago, getting a custom email address for free was like something special for me. I mean, it helps in lots of ways. Building your online presence, for instance. Well, getting one for free was a tough task until I figured out how to get one :) 
+
+<p class="message">This article assumes that you have basic knowledge about configuring DNS for a domain.</p>
 
 It's easy and straight-forward process. You can easily get an email like `mail@abdusdev.me` using Zoho Mail. All you need is a custom domain. You can buy it from Namecheap or GoDaddy etc or get [one for free](#). 
 
