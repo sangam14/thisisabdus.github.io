@@ -57,6 +57,9 @@ pre.highlight {
 .highlighter-rouge {
     color: #b9003e;
 }
+img {
+    width: 100%;
+}
 a {
     text-decoration: underline;
     color: var(--main-text-color);
@@ -181,14 +184,15 @@ section > div {
 .project h2 {
     margin: 1rem 0;
 }
-
-
-
-
-
 footer {
     padding: 4rem 0;
 }
+
+
+
+
+
+
 .small-text {
     font-size: 1.2rem;
 }
@@ -217,4 +221,13 @@ strong {
     height: 30px;
     width: 30px;
     margin: 0 2px;
+}
+
+.profile-image {
+    height: 160px;
+    width: 160px;
+    text-align: center;
+    margin: 50px auto;
+    border-radius: 50%;
+    overflow: hidden;
 }
