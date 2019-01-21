@@ -5,6 +5,19 @@ layout: default
 <div class="main">
     <div class="post-page">
         <h1 class="post-page-title">{{ page.title }}</h1>
+        <h4>
+            <span style="color: gray">Posted on</span> {{ page.date | date: ' %b %d, %Y' }} &VerticalBar; 
+            
+            {% assign wordcount = page.content | number_of_words %}
+            {% if wordcount < 256 %}
+                1 min read
+            {% else %}
+                {{ wordcount | divided_by: 256 }} min read
+            {% endif%}
+            &VerticalBar; 
+
+            {{ page.categories }}
+        </h4>
         {{ content }}
     </div>
 </div>
