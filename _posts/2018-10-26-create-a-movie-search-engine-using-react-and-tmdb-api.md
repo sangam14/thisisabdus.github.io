@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Building a Movie Search Website Using ReactJS and TMDb API
+tags: [ personal-projects, react, tmdb, react-router ]
 categories: [ personal-project ]
 ---
 

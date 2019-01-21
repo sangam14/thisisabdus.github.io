@@ -22,6 +22,7 @@ baseurl:  # the subpath of your site, e.g. /blog
 url: "https://abdusdev.me" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: thisisAbdus
 github_username:  thisisAbdus
+disqus_id: blog-abdus
 paginate: 10
 paginate_path: "/page:num/"
 permalink: /:title

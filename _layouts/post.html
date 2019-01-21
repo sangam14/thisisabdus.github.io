@@ -6,20 +6,25 @@ layout: default
     <div class="post-page">
         <h1 class="post-page-title">{{ page.title }}</h1>
         <h4>
-            <span style="color: gray">Posted on</span> {{ page.date | date: ' %b %d, %Y' }} &VerticalBar; 
+            <span class="gray-text">Posted on</span> {{ page.date | date: ' %b %d, %Y' }} &nbsp; &VerticalBar;&nbsp;
             
             {% assign wordcount = page.content | number_of_words %}
             {% if wordcount < 256 %}
-                1 min read
+                <span class="gray-text">1 min read</span>
             {% else %}
-                {{ wordcount | divided_by: 256 }} min read
-            {% endif%}
-            &VerticalBar; 
+                <span class="gray-text">{{ wordcount | divided_by: 256 }} min read</span>
+            {% endif%} &nbsp;&VerticalBar;&nbsp;
 
-            {{ page.categories }}
+            <span class="gray-text">
+                {% for category in page.categories %}
+                    <a href="{{ '/categories/' | absolute_url }}#{{ category }}">{{ category }}</a>
+                {% endfor %}
+            </span>
         </h4>
         {{ content }}
 
         {% include social-share.html %}
+
+        {% include disqus-comment.html %}
     </div>
 </div>

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to Get a Custom Email Address for Free
+tags: [ miscellaneous ]
 categories: [ miscellaneous ]
 ---
 

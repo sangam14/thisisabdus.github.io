@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Vim Basics for Newbies
+tags: [ linux, vim ]
 categories: [ gnu-linux ]
 ---
 Vim(_Vi IMporved_) editor is the command-line editor comes pre-installed with most of the Linux OSs and MacOS. It's a free, open-source text-editor which is highly customizable and powerful. 
