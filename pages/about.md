@@ -2,6 +2,7 @@
     layout: page
     title: About Me
     permalink: /about/
+    excerpt: About Abdus - A web developer based in India ... loves coding and building things in React and NodeJS ... @thisisAbdus 
 ---
 
 Hello! I am Abdus, a developer living in India. And I am glad that you're interested in reading about me 😃

@@ -2,6 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
+excerpt: List of projects Abdus built till date. Youcan find all of the projects here ... 
 ---
 
 {% for project in site.data.projects %}
