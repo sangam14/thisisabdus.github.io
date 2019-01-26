@@ -1,3 +1,14 @@
+- name: GH head to head
+  status: completed #in-progress | in-progress | failed
+  description: A mini-project I built to learn how to work with GraphQL and React. 
+  tech_stack: React, GraphQL
+  important_project: true
+  url: 
+    repo: https://github.com/thisisabdus/gh-head-to-head
+    demo: 
+    download: https://github.com/thisisabdus/gh-head-to-head/archive/master.zip
+    blog: 
+
 - name: Chat App
   status: in-progress #completed | in-progress | failed
   description: A live chat-app with TTS support. Built using NodeJS, socket.io and NoSQL.

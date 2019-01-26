@@ -155,6 +155,40 @@ section > div {
 .post-page h5, .post-page h6 {
     color: var(--h-color);
 }
+.post-page img {
+    border-radius: 4px;
+}
+
+.project {
+    margin-top: 3rem;
+}
+.project h2 {
+    margin: 1rem 0;
+}
+.PageNavigation {
+    display: block;
+    width: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.PageNavigation a {
+    display: block;
+    width: 50%;
+    margin: 1em 0;
+}
+
+.PageNavigation .next {
+    text-align: right;
+}
+  
+footer {
+    padding: 4rem 0;
+}
+
 
 @media (max-width: 800px) {
     nav {
@@ -176,18 +210,10 @@ section > div {
     .blog-posts .post .blog-title {
         display: block;
     }
+    .PageNavigation a {
+        width: 100%;
+    }
 }
-
-.project {
-    margin-top: 3rem;
-}
-.project h2 {
-    margin: 1rem 0;
-}
-footer {
-    padding: 4rem 0;
-}
-
 
 
 
