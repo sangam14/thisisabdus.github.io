@@ -17,10 +17,9 @@ html {
     color: #000000;
 }
 * {
-    font-weight: 100;
     color: var(--main-text-color);
     box-sizing: border-box;
-    font-family: 'Thasadith', sans-serif;
+    font-family: 'Sarabun', sans-serif;
     background: inherit;
 }
 body {
@@ -40,12 +39,11 @@ nav {
     box-shadow: 0 8px 6px -6px var(--main-text-color);
 }
 nav .logo a {
-    font-weight: 700;
     color: var(--h-color);
 }
 h1, h2, h3, 
 h4, h5, h6 {
-    font-weight: 700;
+    font-weight: 500;
     margin: 1.8rem inherit;
 }
 pre.highlight {
@@ -149,11 +147,16 @@ section > div {
 
 .post-page {
     color: var(--main-text-color);
+    font-weight: 200;
 }
 .post-page h1, .post-page h2,
 .post-page h3, .post-page h4,
 .post-page h5, .post-page h6 {
     color: var(--h-color);
+    font-weight: 500;
+}
+.post-page .post-page-title {
+    margin-bottom: 10px;
 }
 .post-page img {
     border-radius: 4px;
